@@ -14,7 +14,7 @@ Install Guzzle is git
 ```bash
 # Install guzzle files in application/libraries folder
 
-git clone git@github.com:guzzle/guzzle.git
+git clone https://github.com/rohitbh09/codeigniter-guzzle.git
 
 ```
 Now vendor and guzzle.php files successfully install libraries
