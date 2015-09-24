@@ -1,4 +1,4 @@
-Guzzel~6.0  installation in Codeigniter 2.2
+Guzzle~6.0  installation in Codeigniter 2.2
 ============================================
 
 
@@ -23,8 +23,8 @@ Now vendor and guzzel.php files successfully install libraries
 Please use following code to access guzzle 
 
 ```bash
-  # guzzel library add to use guzzle
-  $this->load->library('guzzel');
+  #guzzle library add to use guzzle
+  $this->load->library('guzzle');
 
   # guzzel client define
   $client     = new GuzzleHttp\Client();
@@ -53,5 +53,5 @@ Please use following code to access guzzle
     print_r($responseBodyAsString);
   }
 
-  
+
 ```
