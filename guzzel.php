@@ -1,8 +1,8 @@
 <?php
   if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-  class Voitekk_Guzzel {
-    public function Voitekk_Guzzel() {
+  class Guzzel {
+    public function Guzzel() {
       // require_once('vendor/autoload.php');
       require 'vendor/autoload.php';
     }
