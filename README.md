@@ -17,7 +17,7 @@ Install Guzzle is git
 git clone git@github.com:guzzle/guzzle.git
 
 ```
-Now vendor and guzzel.php files successfully install libraries
+Now vendor and guzzle.php files successfully install libraries
 
 
 Please use following code to access guzzle 
@@ -26,28 +26,28 @@ Please use following code to access guzzle
   #guzzle library add to use guzzle
   $this->load->library('guzzle');
 
-  # guzzel client define
+  # guzzle client define
   $client     = new GuzzleHttp\Client();
   
-  #This url define speific Target for guzzel
+  #This url define speific Target for guzzle
   $url        = 'http://www.google.com';
 
-  #Guzzel
+  #guzzle
   try {
-    # Guzzel post request example with form parameter
+    # guzzle post request example with form parameter
     $response = $client->request( 'POST', 
                                    $url, 
                                   [ 'form_params' 
                                         => [ 'processId' => '2' ] 
                                   ]
                                 );
-    #guzzel repose for future use
+    #guzzle repose for future use
     echo $response->getStatusCode(); // 200
     echo $response->getReasonPhrase(); // OK
     echo $response->getProtocolVersion(); // 1.1
     echo $response->getBody();
   } catch (GuzzleHttp\Exception\BadResponseException $e) {
-    #guzzel repose for future use
+    #guzzle repose for future use
     $response = $e->getResponse();
     $responseBodyAsString = $response->getBody()->getContents();
     print_r($responseBodyAsString);
